@@ -31,4 +31,12 @@ public class Student {
     public StringProperty getLastNameProperty() {
         return lastName;
     }
+
+    public String getFirstName() {
+        return firstName.getValue();
+    }
+
+    public String getLastName() {
+        return lastName.getValue();
+    }
 }
