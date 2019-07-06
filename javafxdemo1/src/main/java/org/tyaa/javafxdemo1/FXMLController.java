@@ -22,9 +22,9 @@ public class FXMLController implements Initializable {
     @FXML
     private TableView studentsTable;
     @FXML
-    private TableColumn fisrtNameColumn;
+    private TableColumn firstNameColumn;
     @FXML
-    private TableColumn lasrtNameColumn;
+    private TableColumn lastNameColumn;
     
     private ObservableList<Student> students;
     
@@ -32,9 +32,9 @@ public class FXMLController implements Initializable {
     @FXML
     private void addHandler(ActionEvent event) {
         // System.out.println(firstName.getText());
-        System.out.println(students);
-        System.out.println(firstName.getText());
-        System.out.println(lastName.getText());
+        //System.out.println(students);
+        //System.out.println(firstName.getText());
+        //System.out.println(lastName.getText());
         students.add(new Student(firstName.getText(), lastName.getText()));
     }
     
@@ -44,10 +44,10 @@ public class FXMLController implements Initializable {
         students = FXCollections.observableArrayList();
         //Сопоставление: из каких полей объектов "Студент"
         //в какие колонки таблицы выводить данные
-        fisrtNameColumn.setCellValueFactory(
+        firstNameColumn.setCellValueFactory(
                 new PropertyValueFactory<Student, String>("firstName")
         );
-        lasrtNameColumn.setCellValueFactory(
+        lastNameColumn.setCellValueFactory(
                 new PropertyValueFactory<Student, String>("lastName")
         );
         //Подключаем список объектов "Студент" к таблице

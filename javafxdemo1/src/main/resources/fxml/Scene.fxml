@@ -40,8 +40,8 @@
                <children>
                   <TableView fx:id="studentsTable" layoutX="14.0" layoutY="24.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <columns>
-                      <TableColumn fx:id="fisrtNameColumn" prefWidth="75.0" text="First Name" />
-                      <TableColumn fx:id="lasrtNameColumn" prefWidth="75.0" text="Last Name" />
+                      <TableColumn fx:id="firstNameColumn" prefWidth="75.0" text="First Name" />
+                      <TableColumn fx:id="lastNameColumn" prefWidth="75.0" text="Last Name" />
                     </columns>
                   </TableView>
                </children>
