@@ -18,6 +18,7 @@ public class Student {
     public IntegerProperty id;
     public StringProperty firstName;
     public StringProperty lastName;
+    public StringProperty Age;
 
     public Student(String firstName, String lastName) {
         this.firstName = new SimpleStringProperty(firstName);
@@ -38,5 +39,11 @@ public class Student {
 
     public String getLastName() {
         return lastName.getValue();
+    }
+    public StringProperty getAgeProperty(){
+        return Age;
+    }
+    public String getAge(){
+        return Age.getValue();
     }
 }
