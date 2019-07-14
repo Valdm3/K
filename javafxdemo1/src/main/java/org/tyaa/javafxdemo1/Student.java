@@ -20,9 +20,10 @@ public class Student {
     public StringProperty lastName;
     public StringProperty Age;
 
-    public Student(String firstName, String lastName) {
+    public Student(String firstName, String lastName, String Age) {
         this.firstName = new SimpleStringProperty(firstName);
         this.lastName = new SimpleStringProperty(lastName);
+        this.Age = new SimpleStringProperty(Age);
     }
 
     public StringProperty getFirstNameProperty() {
